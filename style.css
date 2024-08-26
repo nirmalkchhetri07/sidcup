@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(245,124,0);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 120px;
+  gap: 40px;
+  position: fixed;
+  z-index: 999;
+}
+#nav img {
+  height: 50px;
+  cursor: pointer;
+}
+#nav h4 {
+ cursor: pointer;
+  color: rgb(239, 241, 236);
+}
+#nav button {
+  height: 40px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(149, 193, 30);
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: rgb(239, 241, 236);
+}
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ z-index: -1;
+  position: fixed;
+}
+
+#main {
+  height: 100vh;
+    width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.39);
+  overflow-y: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#page1 h1{
+    font-size: 7vw;
+    position: relative;
+    font-weight: 900;
+    color: #FFF;
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -5px;
+    left: 10px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
+    font-size:6vw;
+    gap: 80px;
+    padding: 0px 10px;
+}
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  #page1 p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+    color: #dcdedf;
+    margin-top: 15px;
+  }
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+  }
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%  ;
+    
+}
+.text{
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+.text span{
+  color: white;
+  position: relative;
+  font-weight: 900;
+  color: #FFF;
+}
+
+
